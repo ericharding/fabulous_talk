@@ -4,6 +4,38 @@
 - theme : sky
 - transition : default
 
-<!-- default, fade, slide, convex, concave, zoom -->
-<!-- https://revealjs.com/?transition=zoom#/transitions -->
+***
+
+## Publish React Components with Fable
+
+> Eric Harding  
+@digitalsorcery  
+https://blog.digitalsorcery.net
+
+
+![SFF](images/openfsharp.svg)
+
+<!-- 
+reminder:
+*** -> next slide is down from here
+--- -> start a new slide column
+-->
+
+***
+
+## First, 
+---
+
+## a little background...
+
+<!-- 
+I'm going to be talking about several technologies
+and I want to make sure everyone has, at least, a passing familiarity
+ -->
+
+---
+
+## What is React?
+- Component based JavaScript view library
+- Pioneer of the pure view function
 

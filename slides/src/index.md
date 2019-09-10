@@ -1,7 +1,7 @@
 - title : Developing a Fabulous Mobile App
 - description : Getting started with Fabulous
 - author : Eric Harding
-- theme : Solarized
+- theme : Night
 - transition : default
 
 ***

@@ -1,5 +1,11 @@
+body {
+    background-image: radial-gradient(#eee,black) !important;
+}
 .slide-background {
-    background-image: url("/images/GreenTexture.jpg");
+    background-image: url("/images/circle-blues.png");
+    background-size: 400px !important;
+    background-repeat: repeat !important;
+    opacity: 0.65 !important;
 }
 img {
     border: 0px !important;

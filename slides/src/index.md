@@ -20,15 +20,38 @@ https://blog.digitalsorcery.net
 
 ***
 
-## Familiarity
+<!-- 
+Talk about my first introduction to fabulous at meetup
+"is it good" joke
+
+-->
+## Storytime
 
 ---
 
-## Used fable?
+Introduction to Fabulous
+
+---
+
+![](images/what_i_expected_arrested_development.gif)
+
+---
+I know this
+![](images/i-know-this.jpg)
+
+---
+
 
 ***
 
 ## Design patterns
+* MVC
+* MVVM
+* MVU 🔥
+
+<!--
+Talk about
+-->
 
 ***
 

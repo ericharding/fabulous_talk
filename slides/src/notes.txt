@@ -12,6 +12,13 @@ MVVM
 - view in a second language
 - complex designer tooling
 
+Xaml
+- accidental complexity
+    - bindings/ templates
+    - code-like constructs (behaviors, converters)
+    - designer tools (shitty)
+    - CanExecute!  (stateful)
+
 MVU
 - Functional programming
 - simple declarative models
@@ -20,5 +27,6 @@ MVU
 - Simple live coding tooling
     - same language tooling
 
+- unidirectional data flow
 
-    
+

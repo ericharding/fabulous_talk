@@ -1,5 +1,13 @@
 
 
+Storytime
+|> What is familiar about Fabulous
+|> F# / MVU / Domain Modeling
+|> What is MVU?
+|> What came before MVU?
+
+
+
 # "storytime"
 - First introduction to Fabulous
 * joke

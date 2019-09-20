@@ -22,13 +22,8 @@ https://blog.digitalsorcery.net
 
 # Storytime
 <!-- Talk about my first introduction to fabulous at meetup
-"is it good" joke 
+"is it any good?" "it's fabulous"
 -->
-
----
-
-My Introduction to Fabulous
-
 ---
 
 ![](images/what_i_expected_arrested_development.gif)

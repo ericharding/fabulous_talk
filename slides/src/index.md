@@ -20,25 +20,28 @@ https://blog.digitalsorcery.net
 
 ***
 
-<!-- 
-Talk about my first introduction to fabulous at meetup
-"is it good" joke
-
+# Storytime
+<!-- Talk about my first introduction to fabulous at meetup
+"is it good" joke 
 -->
-
-## Storytime
 
 ---
 
-Introduction to Fabulous
+My Introduction to Fabulous
 
 ---
 
 ![](images/what_i_expected_arrested_development.gif)
 
 ---
-I know this!
 ![](images/i-know-this.jpg)
+
+I know this!
+
+---
+
+## Takeaway
+<!-- The main takeaway is that Fabulous is *familiar* -->
 
 ---
 ??

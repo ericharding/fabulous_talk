@@ -6,6 +6,9 @@
 - Feeling of familiarity
 * graphic
 
+** central thesis of this talk:
+Fabulous is familiar **
+
 # Introduce SameRoom here?
 
 # MVU

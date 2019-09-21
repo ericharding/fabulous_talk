@@ -21,9 +21,10 @@ https://blog.digitalsorcery.net
 ***
 
 # Storytime
-<!-- Talk about my first introduction to fabulous at meetup
-"is it any good?" "it's fabulous"
+<!-- Introduction to fabulous at the meetup
+    "do you like it? is it any good?" "it's fabulous"
 -->
+
 ---
 
 ![](images/what_i_expected_arrested_development.gif)
@@ -32,14 +33,28 @@ https://blog.digitalsorcery.net
 ![](images/i-know-this.jpg)
 
 I know this!
+<!-- Even though Fabulous is relatively new
+it feels familiar because most pieces stay the same
+* f# / domain modeling
+-->
 
 ---
 
-## Takeaway
-<!-- The main takeaway is that Fabulous is *familiar* -->
+## F#
 
 ---
-??
+
+## Domain Modeling
+
+---
+
+## Immutability
+
+---
+
+## Model View Update
+
+---
 
 ***
 

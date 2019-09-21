@@ -1,11 +1,24 @@
 
 
-Storytime
+|> Storytime
 |> What is familiar about Fabulous
 |> F# / MVU / Domain Modeling
+|> What came before MVU / What problems does MVU solve?
+    - where's the state?
 |> What is MVU?
-|> What came before MVU?
+    - both strict and freeing
+    - pattern not a framework, each piece considered separately
+    - virtual ui
+    - "fractal"
+|> Introduce sameroom / gif demo
+|> -- What did I learn?
+|> -- tips/tricks
 
+
+Things to fit in:
+* animation, tips
+* Demo of Sameroom (gif)
+* xamarin forms / layout
 
 
 # "storytime"

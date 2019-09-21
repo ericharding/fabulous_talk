@@ -1,8 +1,3 @@
-The code will be way simpler to write
-- 1 language to master
-- the UI code being enforced by the compiler
-- less cognitive complexity (no race condition, 1 state that mutates only in 1 place, etc.)
-- less weird things going on between the code behind and the UI (e.g. {Binding IsVisible, Converter={StaticResource InvertBooleanConverter}})
 
 
 MVVM

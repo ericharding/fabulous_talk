@@ -35,37 +35,100 @@ https://blog.digitalsorcery.net
 I know this!
 <!-- Even though Fabulous is relatively new
 it feels familiar because most pieces stay the same
-* f# / domain modeling
 -->
 
 ---
 
 ## F#
+* No separate UI language
+* No new tools needed
 
 ---
 
 ## Domain Modeling
+* Works with your _existing_ model
+* Make illegal states unrepresentable
 
 ---
 
 ## Immutability
+* Designed for functional languages
+* No forced mutability
 
 ---
 
 ## Model View Update
+* One way data flow
+* Single source of truth
+* "fractal" components
+* Not a framework
+
+---
+
+## **ONE WAY** data flow
+* so good
+
+<!-- maybe cut this one -->
+![](images/so_good.gif)
 
 ---
 
 ***
 
-## Design patterns
-* MVC
-* MVVM
-* MVU 🔥
+### Before MVU?
 
-<!--
-Talk about
--->
+> “You have to know the past to understand the present.”
+
+> ― Carl Sagan 
+
+<!-- TODO: What's the POINT of this section? -->
+
+---
+
+# MVC
+
+![](images/Abe_Simpson.png)
+<!-- MVC Smalltalk 78 -->
+
+---
+
+### MVC is Vague...
+
+> It's often referred to as a pattern, but I don't find it terribly useful to think of it as a pattern because it contains quite a few different ideas. 
+> -- Martin Fowler
+
+<!-- MVU is not vague.  You can tell by the type signatures -->
+
+---
+
+# MVP
+
+![](images/mvp.png)
+
+---
+
+# MVVM
+
+![](images/mvvm.png)
+
+---
+
+## MV*
+* A bit vague on some things
+* "where's the state?"
+
+# TODO
+
+---
+
+## Tech Support
+![](images/hello_it.jpg)
+
+---
+
+# MVU
+* Not vague
+* Restriction gives freedom
 
 ***
 

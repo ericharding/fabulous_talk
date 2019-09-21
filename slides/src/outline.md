@@ -1,8 +1,8 @@
 
 
 |> Storytime
-|> What is familiar about Fabulous
-|> F# / MVU / Domain Modeling
+    |> What is familiar about Fabulous
+    |> F# / MVU / Domain Modeling
 |> What came before MVU / What problems does MVU solve?
     - where's the state?
 |> What is MVU?
@@ -11,14 +11,17 @@
     - virtual ui
     - "fractal"
 |> Introduce sameroom / gif demo
-|> -- What did I learn?
-|> -- tips/tricks
+    -- What did I learn? / tips+tricks
+    > layout
+        - Look at Xamarin docs
+        - Like with fable/elmish you have to "learn" how to read the docs 
+            -> don't search for "fabulous stack panel" (or do?)
+            -> search for xamarin forms stack panel
+    > Animations
+        - animations during other updates
+        - virtual dom helps
+    > Async callouts (from view)
 
-
-Things to fit in:
-* animation, tips
-* Demo of Sameroom (gif)
-* xamarin forms / layout
 
 
 # "storytime"

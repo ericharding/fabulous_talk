@@ -1,4 +1,10 @@
 
+TODO:
+* Test if I can always start an animation
+* Read Martin Fowler's gui architecture series
+* What does Jim Bennett say about MVC?
+
+==========================
 
 MVVM
 - OO programming

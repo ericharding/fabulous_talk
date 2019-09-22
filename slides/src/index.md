@@ -97,13 +97,9 @@ it feels familiar because most pieces stay the same
 > It's often referred to as a pattern, but I don't find it terribly useful to think of it as a pattern because it contains quite a few different ideas. 
 > -- Martin Fowler
 
-<!-- MVU is not vague.  You can tell by the type signatures -->
-
----
-
-# MVP
-
-![](images/mvp.png)
+<!-- MVU is not vague.  You can tell by the type signatures 
+Where's the state?
+-->
 
 ---
 

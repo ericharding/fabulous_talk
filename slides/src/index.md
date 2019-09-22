@@ -81,14 +81,14 @@ it feels familiar because most pieces stay the same
 
 > ― Carl Sagan 
 
-<!-- TODO: What's the POINT of this section? -->
+<!-- short section, complain about state -->
 
 ---
 
-# MVC
+# MVC / MV*
 
 ![](images/Abe_Simpson.png)
-<!-- MVC Smalltalk 78 -->
+<!-- old MVC Smalltalk 78 -->
 
 ---
 
@@ -113,34 +113,41 @@ it feels familiar because most pieces stay the same
 
 ---
 
-## MV*
-* A bit vague on some things
-* "where's the state?"
-
-# TODO
-
----
-
 ## Tech Support
 ![](images/hello_it.jpg)
 
----
+***
 
 # MVU
-* Not vague
-* Restriction gives freedom
 
-***
+Not Vague
 
-### Domain Driven Design
+* view  : Model -> (Msg->unit) -> Elements
+* update : Model -> Msg -> Model
 
 ---
 
-## Using Xamarin
+![](images/mvu.svg)
+
+---
+
+# TODO: more about MVU
 
 ***
 
+## Xamarin Forms
+
+A _Fabulous_ View
+
+---
+
 ## Where to look for help?
+
+***
+
+# SameRoom
+
+![](images/sameroom.gif)
 
 ***
 

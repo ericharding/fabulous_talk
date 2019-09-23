@@ -65,14 +65,6 @@ it feels familiar because most pieces stay the same
 
 ---
 
-## **ONE WAY** data flow
-* so good
-
-<!-- maybe cut this one -->
-![](images/so_good.gif)
-
----
-
 ***
 
 ### Before MVU?
@@ -92,7 +84,7 @@ it feels familiar because most pieces stay the same
 
 ---
 
-### MVC is Vague...
+### MVC is a bit vague...
 
 > It's often referred to as a pattern, but I don't find it terribly useful to think of it as a pattern because it contains quite a few different ideas. 
 > -- Martin Fowler
@@ -100,6 +92,11 @@ it feels familiar because most pieces stay the same
 <!-- MVU is not vague.  You can tell by the type signatures 
 Where's the state?
 -->
+
+---
+
+# MVP
+* Replaces "Controller" with "Presenter"
 
 ---
 

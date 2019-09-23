@@ -4,6 +4,8 @@ TODO:
 * Read Martin Fowler's gui architecture series
 * What does Jim Bennett say about MVC?
 
+**** FEATURES VS BENEFITS ****
+
 ==========================
 
 MVVM

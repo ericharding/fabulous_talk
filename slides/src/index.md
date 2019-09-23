@@ -53,15 +53,15 @@ it feels familiar because most pieces stay the same
 
 ## Immutability
 * Designed for functional languages
-* No forced mutability
+* No required mutability
 
 ---
-
+<!--todo; more images here-->
 ## Model View Update
 * One way data flow
 * Single source of truth
-* "fractal" components
-* Not a framework
+<!-- * "fractal" components -->
+* A library Not a framework
 
 ---
 
@@ -69,18 +69,22 @@ it feels familiar because most pieces stay the same
 
 ### Before MVU?
 
-> “You have to know the past to understand the present.”
 
-> ― Carl Sagan 
-
-<!-- short section, complain about state -->
+> We are all here for some special reason. Stop being a prisoner of your past. Become the architect of your future. 
+> ― Wise Old Sayings.com
 
 ---
 
-# MVC / MV*
+# MVC
 
 ![](images/Abe_Simpson.png)
 <!-- old MVC Smalltalk 78 -->
+
+---
+
+# MVP
+* Replace controller with presenter
+<!-- 1990s -->
 
 ---
 

@@ -1,5 +1,12 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.reveal i {
+    font-family: 'FontAwesome';
+    font-style: normal;
+}
+
 body {
-    background-image: radial-gradient(#eee,black) !important;
+    background-image: radial-gradient(#ddf,black) !important;
 }
 .slide-background {
     background-image: url("/images/circle-blues.png");

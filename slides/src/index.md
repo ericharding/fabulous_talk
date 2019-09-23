@@ -21,18 +21,19 @@ https://blog.digitalsorcery.net
 ***
 
 # Storytime
+# <i class="fas fa-book"></i> 
 <!-- Introduction to fabulous at the meetup
     "do you like it? is it any good?" "it's fabulous"
 -->
 
 ---
 
-![](images/what_i_expected_arrested_development.gif)
+![](images/idontknow.jpg)
 
 ---
 ![](images/i-know-this.jpg)
 
-I know this!
+### I know this
 <!-- Even though Fabulous is relatively new
 it feels familiar because most pieces stay the same
 -->
@@ -56,7 +57,6 @@ it feels familiar because most pieces stay the same
 * No required mutability
 
 ---
-<!--todo; more images here-->
 ## Model View Update
 * One way data flow
 * Single source of truth
@@ -69,29 +69,38 @@ it feels familiar because most pieces stay the same
 
 ### Before MVU?
 
-
 > We are all here for some special reason. Stop being a prisoner of your past. Become the architect of your future. 
-> ― Wise Old Sayings.com
+> ― WiseOldSayings.com
 
 ---
 
 # MVC
 
 ![](images/Abe_Simpson.png)
-<!-- old MVC Smalltalk 78 -->
+<!-- The classic UI pattern, 
+MVC Smalltalk 79
+Ask 5 developers what MVC is and you'll get 5 answers
+-->
 
 ---
 
 # MVP
-* Replace controller with presenter
-<!-- 1990s -->
+<!-- basically still MVC... -->
 
 ---
 
-### MVC is a bit vague...
+# MVVM
 
-> It's often referred to as a pattern, but I don't find it terribly useful to think of it as a pattern because it contains quite a few different ideas. 
-> -- Martin Fowler
+<!-- ![](images/MVVMPattern.png) -->
+<img src="images/MVVMPattern.png" width="70%" />
+
+---
+
+# MV_ 
+### Can be a bit vague
+
+> Where's the State?
+> -- @jimbobbennett
 
 <!-- MVU is not vague.  You can tell by the type signatures 
 Where's the state?
@@ -99,16 +108,6 @@ Where's the state?
 
 ---
 
-# MVP
-* Replaces "Controller" with "Presenter"
-
----
-
-# MVVM
-
-![](images/mvvm.png)
-
----
 
 ## Tech Support
 ![](images/hello_it.jpg)

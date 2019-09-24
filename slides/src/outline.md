@@ -18,7 +18,7 @@
             -> don't search for "fabulous stack panel" (or do?)
             -> search for xamarin forms stack panel
     > Animations
-        - animations during other updates
+        - animations duringureother updates
         - virtual dom helps
     > Async callouts (from view)
 

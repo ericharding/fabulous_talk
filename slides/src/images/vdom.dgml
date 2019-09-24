@@ -2,37 +2,37 @@
 <DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
     <Node Id="Actual" Bounds="-576.271597902749,-355.633237207031,338.4983791097,199.631472277832" Group="Expanded" Label="Virtual" UseManualLocation="True" />
-    <Node Id="Actual1" Bounds="-455.457976273952,-583.525953418263,179.978638509115,197.880335498047" Group="Expanded" Label="Actual" UseManualLocation="True" />
+    <Node Id="Actual1" Bounds="-456.863657019395,-583.52588566924,182.79,197.88025" Group="Expanded" Label="Xamarin Dom" UseManualLocation="True" />
     <Node Id="Button" Bounds="-556.271597902749,-201.961864929199,55.7966666666667,25.96" Label="button" />
-    <Node Id="Button1" Bounds="-355.270405880072,-431.593337365934,55.6233333333334,25.96" Label="Button" />
-    <Node Id="Button2" Bounds="324.010662410073,-265.664226989746,55.6233333333333,25.9600000000001" Label="Button" />
+    <Node Id="Button1" Bounds="-436.863657019395,-431.605735669239,55.6233333333334,25.96" Label="Button" />
+    <Node Id="Button2" Bounds="80.3240795141582,-265.704533437094,55.6233333333332,25.9600000000001" Label="Button" />
     <Node Id="Diff" Category="Category10" Bounds="-155.163776772343,-397.346906030273,90.0000114440918,141.920221972656" Group="Expanded" UseManualLocation="True" />
     <Node Id="Layout" Bounds="-389.653866579507,-315.633137207031,55.45,25.96" Label="Layout" />
-    <Node Id="Layout1" Bounds="-353.183510331569,-543.513472863981,55.45,25.96" Label="Layout" />
-    <Node Id="Layout2" Bounds="245.137848791095,-377.664894445802,55.45,25.96" Label="Layout" />
+    <Node Id="Layout1" Bounds="-351.776990352728,-543.52578566924,55.45,25.96" Label="Layout" />
+    <Node Id="Layout2" Bounds="248.410746180825,-377.624658437082,55.45,25.96" Label="Layout" />
     <Node Id="Link1" Category="Category2" Bounds="-389.906552126382,-201.961948852539,51.0666666666667,25.96" Label="Link 1" />
-    <Node Id="Link11" Category="Category2" Bounds="-135.163776772343,-301.386776428223,50,25.96" Label="Link1" />
-    <Node Id="Link12" Bounds="162.335542679442,-265.680332641602,51.0666666666667,25.9600000000001" Label="Link 1" />
+    <Node Id="Link11" Category="Category2" Bounds="-135.163771050297,-357.346845043945,50,25.96" Label="Link1" />
+    <Node Id="Link12" Bounds="246.602412847491,-265.704458437081,51.0666666666667,25.9600000000001" Label="Link 1" />
     <Node Id="Link2" Category="Category2" Bounds="-308.839885459715,-203.71291015625,51.0666666666666,25.96" Label="Link 2" UseManualLocation="True" />
-    <Node Id="Link21" Category="Category2" Bounds="-135.163765328251,-357.346806030273,50,25.96" Label="Link2" />
-    <Node Id="Link22" Bounds="80.3591632849102,-265.696401534018,51.0666666666667,25.9600000000001" Label="Link 2" />
+    <Node Id="Link21" Category="Category2" Bounds="-135.163771050297,-301.386745043945,50,25.96" Label="Link2" />
+    <Node Id="Link22" Bounds="328.602412847492,-265.704458437081,51.0666666666667,25.9600000000001" Label="Link 2" />
     <Node Id="Panel" Bounds="-474.373157757892,-257.921993713379,50,25.96" Label="Panel" />
-    <Node Id="Panel1" Bounds="-435.457976273952,-487.553420373746,50,25.96" Label="Panel" />
-    <Node Id="Panel2" Bounds="247.848498713784,-321.624272428386,50,25.96" Label="Panel" />
+    <Node Id="Panel1" Bounds="-434.051990352728,-487.565835669239,50,25.96" Label="Panel" />
+    <Node Id="Panel2" Bounds="166.135746180825,-321.664583437094,50,25.96" Label="Panel" />
     <Node Id="Patch" Category="Comment" Bounds="-25.6408367150897,-355.263849080404,50,25.96" Label="patch" UseManualLocation="True">
       <Category Ref="Category10" />
     </Node>
     <Node Id="Sidebar" Bounds="-391.907169395262,-259.673023681641,59.9566666666667,25.9600000000001" Label="Sidebar" />
-    <Node Id="Sidebar1" Bounds="-355.436004431504,-487.553450891324,59.9566666666667,25.96" Label="Sidebar" />
-    <Node Id="Sidebar2" Bounds="157.891832047117,-321.656501534018,59.9566666666667,25.96" Label="Sidebar" />
+    <Node Id="Sidebar1" Bounds="-354.030323686061,-487.56578566924,59.9566666666667,25.96" Label="Sidebar" />
+    <Node Id="Sidebar2" Bounds="246.157412847492,-321.664558437082,59.9566666666667,25.96" Label="Sidebar" />
     <Node Id="Text" Bounds="-470.373188275471,-201.961903076172,50,25.96" Label="Text" />
-    <Node Id="Text1" Bounds="-435.457304887233,-431.593367883512,50,25.96" Label="Text" />
-    <Node Id="Text2" Bounds="243.845415624591,-265.664172428386,50,25.96" Label="Text" />
-    <Node Id="Updated" Bounds="60.3591632849102,-417.664994445802,339.274832458496,197.960922017416" Group="Expanded" UseManualLocation="True" />
+    <Node Id="Text1" Bounds="-351.051990352728,-431.60578566924,50,25.96" Label="Text" />
+    <Node Id="Text2" Bounds="166.135746180825,-265.704483437094,50,25.96" Label="Text" />
+    <Node Id="Updated" Bounds="60.3591632849102,-417.664994445802,339.274832458496,197.960922017416" Group="Expanded" Label="Updated Xamarin Dom" UseManualLocation="True" />
   </Nodes>
   <Links>
     <Link Source="Actual" Target="Button" Category="Contains" />
-    <Link Source="Actual" Target="Diff" Bounds="-237.773218793049,-313.607907847274,73.8534467165424,17.5564559613711" />
+    <Link Source="Actual" Target="Diff" Bounds="-237.773218793049,-313.60790920752,73.8534524385881,17.5564573216169" />
     <Link Source="Actual" Target="Layout" Category="Contains" />
     <Link Source="Actual" Target="Link1" Category="Contains" />
     <Link Source="Actual" Target="Link2" Category="Contains" />
@@ -40,30 +40,30 @@
     <Link Source="Actual" Target="Sidebar" Category="Contains" />
     <Link Source="Actual" Target="Text" Category="Contains" />
     <Link Source="Actual1" Target="Button1" Category="Contains" />
-    <Link Source="Actual1" Target="Diff" Bounds="-275.479337764837,-428.824144370876,112.665228699795,69.8127080146554" />
+    <Link Source="Actual1" Target="Diff" Bounds="-274.073657019394,-427.95311805179,111.259553676398,68.9416852412195" />
     <Link Source="Actual1" Target="Layout1" Category="Contains" />
     <Link Source="Actual1" Target="Panel1" Category="Contains" />
     <Link Source="Actual1" Target="Sidebar1" Category="Contains" />
     <Link Source="Actual1" Target="Text1" Category="Contains" />
     <Link Source="Diff" Target="Link11" Category="Contains" />
     <Link Source="Diff" Target="Link21" Category="Contains" />
-    <Link Source="Diff" Target="Updated" Bounds="-65.1637653282507,-325.367858487095,116.525234907343,2.63848458989088" />
-    <Link Source="Layout" Target="Panel" Bounds="-422.194212170003,-289.673137207031,40.5979671470192,26.7936885987515" />
-    <Link Source="Layout" Target="Sidebar" Bounds="-361.928859500927,-289.673137207031,1.14523106162778E-05,21.000113525392" />
-    <Link Source="Layout1" Target="Panel1" Bounds="-383.045745849609,-517.552429199219,38.0512084960938,25.0509948730469" />
-    <Link Source="Layout1" Target="Sidebar1" Bounds="-325.278625488281,-517.552429199219,0,20.9999694824219" />
-    <Link Source="Layout2" Target="Panel2" Bounds="272.840850830078,-351.687194824219,0,21.0144653320313" />
-    <Link Source="Layout2" Target="Sidebar2" Bounds="215.096237182617,-351.687194824219,38.0363616943359,25.0682983398438" />
-    <Link Source="Panel" Target="Button" Bounds="-502.704976932125,-231.961993713379,35.0076764552571,24.7978662553571" />
-    <Link Source="Panel" Target="Text" Bounds="-448.445360763809,-231.961993713379,1.50270193408937,21.0229945008061" />
-    <Link Source="Panel1" Target="Button1" Bounds="-391.026824951172,-461.592498779297,37.0338134765625,24.96875" />
-    <Link Source="Panel1" Target="Text1" Bounds="-410.278839111328,-461.592498779297,0,21" />
-    <Link Source="Panel2" Target="Button2" Bounds="291.157928466797,-295.688659667969,34.9939880371094,24.8148193359375" />
-    <Link Source="Panel2" Target="Text2" Bounds="270.411254882813,-295.688659667969,1.50213623046875,21.0373840332031" />
-    <Link Source="Sidebar" Target="Link1" Bounds="-363.442585882371,-233.713023681641,0.963975137785724,22.7591369395168" />
-    <Link Source="Sidebar" Target="Link2" Bounds="-343.692324711387,-233.713023681641,34.8169074048021,24.7812451311256" />
-    <Link Source="Sidebar2" Target="Link12" Bounds="187.873733520508,-295.688659667969,0,21.0144653320313" />
-    <Link Source="Sidebar2" Target="Link22" Bounds="132.349136352539,-295.688659667969,36.5119323730469,24.9440002441406" />
+    <Link Source="Diff" Target="Updated" Bounds="-65.1637710502971,-325.36785861666,116.490156858638,2.63769031652123" />
+    <Link Source="Layout" Target="Panel" Bounds="-422.194210389754,-289.673137207031,40.5979637713975,26.793684197479" />
+    <Link Source="Layout" Target="Sidebar" Bounds="-361.928859500926,-289.673137207031,1.14523106731212E-05,21.0001135253913" />
+    <Link Source="Layout1" Target="Panel1" Bounds="-382.074340820313,-517.565734863281,38.6454467773438,25.051025390625" />
+    <Link Source="Layout1" Target="Sidebar1" Bounds="-323.405029296875,-517.565734863281,0,20.9999694824219" />
+    <Link Source="Layout2" Target="Panel2" Bounds="218.368789672852,-351.664520263672,38.0511016845703,25.051025390625" />
+    <Link Source="Layout2" Target="Sidebar2" Bounds="276.1357421875,-351.664520263672,0,21" />
+    <Link Source="Panel" Target="Button" Bounds="-502.704978670324,-231.961998394775,35.0076797263792,24.7978706469618" />
+    <Link Source="Panel" Target="Text" Bounds="-448.44536091904,-231.961998394775,1.50270235136594,21.0230038559641" />
+    <Link Source="Panel1" Target="Button1" Bounds="-409.732788085938,-461.605773925781,0,21" />
+    <Link Source="Panel1" Target="Text1" Bounds="-390.180084228516,-461.605773925781,37.6122131347656,24.96875" />
+    <Link Source="Panel2" Target="Button2" Bounds="134.850051879883,-295.704528808594,37.0337219238281,24.96875" />
+    <Link Source="Panel2" Target="Text2" Bounds="191.1357421875,-295.704528808594,0,21" />
+    <Link Source="Sidebar" Target="Link1" Bounds="-363.442585882371,-233.713023681641,0.963975137785837,22.7591369395172" />
+    <Link Source="Sidebar" Target="Link2" Bounds="-343.692324711387,-233.713023681641,34.8169074048024,24.7812451311258" />
+    <Link Source="Sidebar2" Target="Link12" Bounds="273.705230712891,-295.704528808594,1.50271606445313,21.0228881835938" />
+    <Link Source="Sidebar2" Target="Link22" Bounds="294.227966308594,-295.704528808594,34.5028686523438,24.7536010742188" />
     <Link Source="Updated" Target="Button2" Category="Contains" />
     <Link Source="Updated" Target="Layout2" Category="Contains" />
     <Link Source="Updated" Target="Link12" Category="Contains" />

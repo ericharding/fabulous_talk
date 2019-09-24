@@ -96,7 +96,6 @@ Ask 5 developers what MVC is and you'll get 5 answers
 <!-- Accidental complexity
 separate designer tooling
 code like constructs (behaviors, converters)
-Stateful components
 -->
 
 ---
@@ -264,15 +263,7 @@ In XAML this refactoring is painful, in f# it is not
 # Fabulous
 ## =
 ### MVU + Xamarin Forms
-
----
-
-### MVU 💜 Xamarin Forms
-* Android
-* IOS
-* Desktop
-<!-- mac, windows, Linux -->
-<!-- established tech -->
+<!-- Established technology -->
 
 ---
 
@@ -283,34 +274,45 @@ New every time
 Diff algorithm behind the scenes
 -->
 
----
-
-## Native Controls
-
-
 ***
 
 ## Xamarin Forms
 
 A _Fabulous_ View
+<!-- https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/introduction-to-mobile-development
+-->
+
+---
+
+## Cross Platform
+
+- <i class="fab fa-android"></i> Android
+- <i class="fab fa-apple"></i> iOS
+- <i class="fas fa-desktop"></i> Desktop
+
+<!-- established tech -->
 
 ---
 
 ## Native Controls
-* Native look
+* Native look & feel
 * Native accessibility
+
+---
+
+### Complete underlying  API
+### *and* 
+### .NET BCL
 
 ---
 
 ## Where to look for help?
 
+## TODO
+
 ***
 
-# SameRoom
-
----
-
-# todo: code samples and screenshots
+## Experience
 
 ---
 
@@ -319,11 +321,26 @@ A _Fabulous_ View
 
 ---
 
-<img src="images/sameroom/conversation.gif" Width="450" />
-
-***
-
 ## Animations 
 * Get them off the UI thread
 * Handling animations during state changes
 
+<!-- TODO; code sample -->
+
+---
+
+<img src="images/sameroom/conversation.gif" Width="450" />
+
+---
+
+## Using existing API
+* todo
+
+---
+
+## Navigation
+* Do you want the back button to work?
+
+***
+
+# Questions?

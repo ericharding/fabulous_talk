@@ -16,7 +16,6 @@ MVU
 
 - unidirectional data flow
 
-
 # Familiarity
 - When you jump into an unknown Xaml project what do you know?
 - Not very much.  Does it use Rx? MvvmLite? 

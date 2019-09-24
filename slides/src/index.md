@@ -316,8 +316,7 @@ A _Fabulous_ View
 
 ---
 
-<img src="images/sameroom/scanning.gif" Width="450" />
-<!-- ![](images/sameroom/scanning.gif) -->
+<img src="images/sameroom/scanning2.gif" Width="450" />
 
 ---
 
@@ -329,12 +328,17 @@ A _Fabulous_ View
 
 ---
 
-<img src="images/sameroom/conversation.gif" Width="450" />
+<img src="images/sameroom/chat2.gif" Width="450" />
 
+---
+## Calling an async api
+
+* 
 ---
 
 ## Using existing API
 * todo
+
 
 ---
 

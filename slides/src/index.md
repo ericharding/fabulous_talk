@@ -61,7 +61,7 @@ it feels familiar because most pieces stay the same
 * One way data flow
 * Single source of truth
 <!-- * "fractal" components -->
-* A library Not a framework
+<!-- * A library Not a framework -->
 
 ---
 
@@ -97,17 +97,15 @@ Ask 5 developers what MVC is and you'll get 5 answers
 ---
 
 # MV_ 
-### Can be a bit vague
+<!-- ### Can be a bit vague -->
 
 > Where's the State?
-> -- @jimbobbennett
+> -- Jim Bennett
 
 <!-- MVU is not vague.  You can tell by the type signatures 
-Where's the state?
 -->
 
 ---
-
 
 ## Tech Support
 ![](images/hello_it.jpg)
@@ -131,9 +129,33 @@ Not Vague
 
 ***
 
+# Fabulous
+
+---
+
+MVU framework
+* Android
+* IOS
+* Desktop
+
+---
+
+## Fully Native
+
+---
+
+
+***
+
 ## Xamarin Forms
 
 A _Fabulous_ View
+
+---
+
+## Native Controls
+* Native look
+* Native accessibility
 
 ---
 
@@ -143,7 +165,18 @@ A _Fabulous_ View
 
 # SameRoom
 
-![](images/sameroom.gif)
+---
+
+# todo: code samples and screenshots
+
+---
+
+<img src="images/sameroom/scanning.gif" Width="450" />
+<!-- ![](images/sameroom/scanning.gif) -->
+
+---
+
+<img src="images/sameroom/conversation.gif" Width="450" />
 
 ***
 

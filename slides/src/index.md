@@ -21,7 +21,7 @@ https://github.com/ericharding/fabulous_talk
 
 ***
 
-# Storytime
+# Storytime 
 # <i class="fas fa-book"></i> 
 <!-- Introduction to fabulous at the meetup
     "do you like it? is it any good?" "it's fabulous"
@@ -56,13 +56,12 @@ it feels familiar because most pieces stay the same
 ## Immutability
 * Designed for functional languages
 * No required mutability
+<!-- Never have to add a setter -->
 
 ---
 ## Model View Update
 * One way data flow
 * Single source of truth
-<!-- * "fractal" components -->
-<!-- * A library Not a framework -->
 
 ---
 
@@ -92,24 +91,32 @@ Ask 5 developers what MVC is and you'll get 5 answers
 
 # MVVM
 
-<!-- ![](images/MVVMPattern.png) -->
 <img src="images/MVVMPattern.png" width="70%" />
+
+<!-- Accidental complexity
+separate designer tooling
+code like constructs (behaviors, converters)
+Stateful components
+-->
 
 ---
 
 # MV_ 
-<!-- ### Can be a bit vague -->
-
 > Where's the State?
 > -- Jim Bennett
 
-<!-- MVU is not vague.  You can tell by the type signatures 
+<!-- MV_ can be a bit vague.  MVU is not vague.  You can tell by the type signatures 
 -->
 
 ---
 
 ## Tech Support
 ![](images/hello_it.jpg)
+<!--
+Reboot to fix it is so ingrained
+I physically cut my fiber. It was sticking out of the ground and I could look at both ends.
+They wouldn't send someone out to fix it until I had rebooted my modem.
+-->
 
 ***
 
@@ -125,24 +132,32 @@ Ask 5 developers what MVC is and you'll get 5 answers
 
 ---
 
-# Model
+# Model 🗿
 * The **only** state
 <!--
 You can't hide state anywhere else
+Debugging advantages
+    - reproduce problems
+    - serialize state
+    - Time travel debugging
 -->
 
 ---
 
-# View
+# View 👀
+<!-- Xamarin forms DSL
+Not the same as fable but that's ok
+Live reload
+Same language, easy refactoring
+-->
 
 ---
 
-
-# Update
+# Update ♻
 
 ---
 
-## Counter
+## Sample
 
 ---
 
@@ -154,6 +169,13 @@ You can't hide state anywhere else
         | Decrement
 
     let init () = { count = 0 }, Cmd.none
+
+---
+
+    let update msg model =
+        match msg with
+        | Increment -> { model with count = model.count + 1 }, Cmd.none
+        | Decrement -> { model with count = model.count - 1 }, Cmd.none
 
 ---
 
@@ -174,29 +196,96 @@ You can't hide state anywhere else
 
 ---
 
-# Components / "Triplets"
-<!--
-Show how to do components in MVU
--->
+## Scaling
+* What about components?
 
 ---
+
+# "Triplets"
+<!-- fractal components -->
+
+---
+
+![](images/component_sample.png)
+
+---
+
+    type Model = 
+      { counter : Counter.Model
+        text : Reverser.Model }
+
+---
+    
+    type Msg = 
+        | CounterMsg of Counter.Msg 
+        | ReverserMsg of Reverser.Msg
+
+---
+
+    let init () = 
+        let cstate, ccmd = Counter.init()
+        let rstate, rcmd = Reverser.init()
+        { counter = cstate; text = rstate }, 
+        Cmd.batch [Cmd.map CounterMsg ccmd; Cmd.map ReverserMsg rcmd]
+
+---
+
+    let update msg model =
+        match msg with
+        | CounterMsg m -> 
+            let (cstate, ccmd) = Counter.update m model.counter
+            { model with counter = cstate }, Cmd.map CounterMsg ccmd
+        | ReverserMsg m -> 
+            let (rstate, rcmd) = Reverser.update m model.text
+            { model with text = rstate }, Cmd.map ReverserMsg rcmd
+
+---
+
+    let view (model: Model) dispatch =
+        View.ContentPage(
+          content = View.StackLayout(
+            children = [ 
+                Counter.view model.counter (CounterMsg>>dispatch)
+                Reverser.view model.text (ReverserMsg>>dispatch)
+            ]))
+
+---
+
+## When?
+![](images/lazy.gif)
+<!--
+When should I break stuff up?
+Break up view/update into functions constantly
+In XAML this refactoring is painful, in f# it is not
+-->
 
 ***
 
 # Fabulous
+## =
+### MVU + Xamarin Forms
 
 ---
 
-MVU framework
+### MVU 💜 Xamarin Forms
 * Android
 * IOS
 * Desktop
+<!-- mac, windows, Linux -->
+<!-- established tech -->
 
 ---
 
-## Fully Native
+## Virtual Elements
+![](images/vdom.png)
+<!--
+New every time
+Diff algorithm behind the scenes
+-->
 
 ---
+
+## Native Controls
 
 
 ***

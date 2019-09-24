@@ -1,26 +1,10 @@
 
 TODO:
 * Test if I can always start an animation
-* Read Martin Fowler's gui architecture series
-* What does Jim Bennett say about MVC?
 
 **** FEATURES VS BENEFITS ****
 
 ==========================
-
-MVVM
-- OO programming
-- Complex mutable models
-- declarative static UI
-- view in a second language
-- complex designer tooling
-
-Xaml
-- accidental complexity
-    - bindings/ templates
-    - code-like constructs (behaviors, converters)
-    - designer tools (shitty)
-    - CanExecute!  (stateful)
 
 MVU
 - Functional programming

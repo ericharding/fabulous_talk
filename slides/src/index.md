@@ -12,6 +12,7 @@
 > Eric Harding  
 @digitalsorcery  
 https://blog.digitalsorcery.net
+https://github.com/ericharding/fabulous_talk
 
 ---
 
@@ -114,18 +115,71 @@ Ask 5 developers what MVC is and you'll get 5 answers
 
 # MVU
 
-Not Vague
-
 * view  : Model -> (Msg->unit) -> Elements
 * update : Model -> Msg -> Model
+<!-- not vague -->
 
 ---
 
-![](images/mvu.svg)
+![](images/model-view-update.svg)
 
 ---
 
-# TODO: more about MVU
+# Model
+* The **only** state
+<!--
+You can't hide state anywhere else
+-->
+
+---
+
+# View
+
+---
+
+
+# Update
+
+---
+
+## Counter
+
+---
+
+    type Model =
+        { count : int }
+
+    type Msg =
+        | Increment
+        | Decrement
+
+    let init () = { count = 0 }, Cmd.none
+
+---
+
+    let view (model: Model) dispatch =
+        View.ContentPage(
+          content = 
+            View.StackLayout(padding = 20.0,
+                children = [ 
+                    View.Label(text = sprintf "%d" model.count, 
+                        widthRequest=200.0)
+                    View.Button(text = "Increment", 
+                        command = (fun () -> dispatch Increment),
+                        horizontalOptions = LayoutOptions.Center)
+                    View.Button(text = "Decrement", 
+                        command = (fun () -> dispatch Decrement), 
+                        horizontalOptions = LayoutOptions.Center)
+                ]))
+
+---
+
+# Components / "Triplets"
+<!--
+Show how to do components in MVU
+-->
+
+---
 
 ***
 

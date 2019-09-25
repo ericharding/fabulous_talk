@@ -11,8 +11,7 @@
 
 > Eric Harding  
 @digitalsorcery  
-https://blog.digitalsorcery.net
-https://github.com/ericharding/fabulous_talk
+https://blog.digitalsorcery.net  
 
 ---
 
@@ -121,18 +120,24 @@ They wouldn't send someone out to fix it until I had rebooted my modem.
 
 # MVU
 
-* view  : Model -> (Msg->unit) -> Elements
-* update : Model -> Msg -> Model
-<!-- not vague -->
+![](images/model-view-update.svg)
 
 ---
 
-![](images/model-view-update.svg)
+# MVU
+
+    Model -> (Msg->unit) -> Elements
+    Model -> Msg -> Model
+
+<!-- not vague -->
 
 ---
 
 # Model 🗿
 * The **only** state
+* Immutable
+* 🐛 Debugable
+
 <!--
 You can't hide state anywhere else
 Debugging advantages
@@ -144,6 +149,10 @@ Debugging advantages
 ---
 
 # View 👀
+
+    Model -> (Msg->unit) -> Lightweight Element Tree
+
+
 <!-- Xamarin forms DSL
 Not the same as fable but that's ok
 Live reload
@@ -154,9 +163,13 @@ Same language, easy refactoring
 
 # Update ♻
 
+    Model -> Msg -> Model
+
+<!-- synchronous -->
+
 ---
 
-## Sample
+# Example
 
 ---
 
@@ -181,21 +194,19 @@ Same language, easy refactoring
     let view (model: Model) dispatch =
         View.ContentPage(
           content = 
-            View.StackLayout(padding = 20.0,
+            View.StackLayout(
                 children = [ 
                     View.Label(text = sprintf "%d" model.count, 
                         widthRequest=200.0)
                     View.Button(text = "Increment", 
-                        command = (fun () -> dispatch Increment),
-                        horizontalOptions = LayoutOptions.Center)
+                        command = (fun () -> dispatch Increment))
                     View.Button(text = "Decrement", 
-                        command = (fun () -> dispatch Decrement), 
-                        horizontalOptions = LayoutOptions.Center)
+                        command = (fun () -> dispatch Decrement))
                 ]))
 
 ---
 
-## Scaling
+# Scaling
 * What about components?
 
 ---
@@ -267,16 +278,26 @@ In XAML this refactoring is painful, in f# it is not
 
 ---
 
-## Virtual Elements
+## Diff & Patch
 ![](images/vdom.png)
 <!--
+Lightweight
 New every time
 Diff algorithm behind the scenes
 -->
 
+---
+
+## Performance
+
+* Memoize
+
+# TODO: `dependsOn` sample
+
+
 ***
 
-## Xamarin Forms
+# Xamarin Forms
 
 A _Fabulous_ View
 <!-- https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/introduction-to-mobile-development
@@ -308,11 +329,62 @@ A _Fabulous_ View
 
 ## Where to look for help?
 
-## TODO
+* Xamarin Forms documentation
+* Elmish / Elm for patterns
 
 ***
 
-## Experience
+# Experience 🎭
+SameRoom
+
+---
+## Auth0
+
+    type IAuthenticationService = 
+        abstract member AuthenticateAsync : unit -> 
+        Async<IdentityModel.OidcClient.LoginResult>
+
+<!--
+    implement interface for all platforms
+-->
+
+---
+
+    let loginAuth0 onSuccess onFailure =
+        let authenticationService = DependencyService.Get<IAuthenticationService>()
+        let popForm = authenticationService.AuthenticateAsync()
+        let success result =
+            match handleLoginResult result with
+            | Good r ->
+                onSuccess { someId = r.IdToken }
+            | Bad r -> 
+                onFailure r.Error
+        Async.StartWithContinuations (popForm, 
+            success, onFailure, onFailure)
+
+<!-- TODO: look up StartWithContinuations -->
+
+---
+
+    let loginButton = 
+        View.Button(
+            text = "Login", 
+            margin=new Thickness(0.0,10.0,0.0,0.0), 
+            command=(fun _ -> 
+                loginAuth0 
+                    (LogInSucceeded>>dispatch) 
+                    (LogInFailed>>dispatch)))
+
+<!-- could also use a command -->
+
+---
+
+## Animations 
+* Off the UI thread
+<!--
+One of the big innovations of mobile
+WPF / 16ms 
+-->
 
 ---
 
@@ -320,31 +392,87 @@ A _Fabulous_ View
 
 ---
 
-## Animations 
-* Get them off the UI thread
-* Handling animations during state changes
+    let pulseImage dispatch (image:Image) =
+        async {
+            for _ in 1..10 do
+                let! _ = Async.AwaitTask (image.FadeTo(0.1, 500u))
+                let! _ = Async.AwaitTask (image.FadeTo(1.0, 500u))
+                ()
+            dispatch <| GoToFoundUsers (ChatBot.createRandomUser())
+        } |> Async.StartImmediate
+<!-- maybe CancellationToken? -->
 
-<!-- TODO; code sample -->
+---
+    let private flyIn (g:Grid) =
+        g.TranslationY <- 500.
+        g.TranslateTo(0., 0., 1000u, Easing.BounceOut)
+        |> ignore
+
+    let view model dispatch =
+        View.Grid(
+            created = flyIn,
+            children = [...])
+---
+
+### TODO: talk about animations triggered by messages
+- borrow from don dyme's talk
+
+---
+
+## External Data
+* Commands
+    - returns a message
+* Subscriptions
+    - dispatches multiple messages
 
 ---
 
 <img src="images/sameroom/chat2.gif" Width="450" />
 
 ---
-## Calling an async api
 
-* 
----
-
-## Using existing API
-* todo
-
+    let delayMsg milliseconds msg = Cmd.ofAsyncMsg (async {
+        do! Async.Sleep milliseconds
+        return msg
+    })
 
 ---
 
+    | GoToConversation otherUser -> 
+        { model with Page = Page.Conversation { OtherUser = otherUser; Messages = []; UnsentMessage = "" } },
+        Support.delayMsg 1000 
+            (ChatReceived <| 
+                { Message.User = otherUser; 
+                  Text = ChatBot.greeting model.User })
+ 
+---
+
+### Xamarin Essentials
+
+    type ILocationService =
+        abstract member GetLocation : unit -> Location option
+
+---
+
+    let locationSub dispatch =
+        let locationService = DependencyService.Get<ILocationService>()
+        async {
+            let loc = locationService.GetLocation()
+            dispatch (Location loc)
+            do! Async.Sleep 1000
+        } |> Async.StartImmidiate
+
+    ...
+    Cmd.ofSub locationSub
+
+<!--
 ## Navigation
 * Do you want the back button to work?
+-->
 
 ***
 
 # Questions?
+
+> https://github.com/ericharding/fabulous_talk
+

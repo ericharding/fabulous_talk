@@ -146,9 +146,9 @@ Debugging advantages
     Model -> (Msg->unit) -> Lightweight Element Tree
 
 
-<!-- Xamarin forms DSL
-virtual DOM
-Same language, easy refactoring
+<!-- Called every time
+DSL
+Easy refactoring
 Live reload
 -->
 
@@ -200,7 +200,6 @@ Live reload
 ---
 
 # Scaling
-* What about components?
 
 ---
 
@@ -271,7 +270,7 @@ In XAML this refactoring is painful, in f# it is not
 
 ---
 
-## Diff & Patch
+# Diff & Patch
 ![](images/vdom.png)
 <!--
 Lightweight
@@ -285,14 +284,13 @@ Diff algorithm behind the scenes
 
     dependsOn model.Count (fun model count -> ...)
 
+<!-- lazyView -->
 
 ***
 
 # Xamarin Forms
 
 A _Fabulous_ View
-<!-- https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/introduction-to-mobile-development
--->
 
 ---
 
@@ -358,7 +356,6 @@ SameRoom
     let loginButton = 
         View.Button(
             text = "Login", 
-            margin=new Thickness(0.0,10.0,0.0,0.0), 
             command=(fun _ -> 
                 loginAuth0 
                     (LogInSucceeded>>dispatch) 
@@ -369,7 +366,6 @@ SameRoom
 ---
 
 ## Animations 
-* Off the UI thread
 <!--
 One of the big innovations of mobile
 WPF / 16ms 
@@ -395,7 +391,6 @@ WPF / 16ms
     let private flyIn (g:Grid) =
         g.TranslationY <- 500.
         g.TranslateTo(0., 0., 1000u, Easing.BounceOut)
-        |> ignore
 
     let view model dispatch =
         View.Grid(
@@ -418,13 +413,8 @@ WPF / 16ms
 
 ---
 
-    let delayMsg milliseconds msg = Cmd.ofAsyncMsg (async {
-        do! Async.Sleep milliseconds
-        return msg
-    })
-
----
-
+    let update model msg =
+    ...
     | GoToConversation otherUser -> 
         { model with Page = Page.Conversation { OtherUser = otherUser; Messages = []; UnsentMessage = "" } },
         Support.delayMsg 1000 
@@ -434,7 +424,14 @@ WPF / 16ms
  
 ---
 
-### Xamarin Essentials
+    let delayMsg milliseconds msg = Cmd.ofAsyncMsg (async {
+        do! Async.Sleep milliseconds
+        return msg
+    })
+
+---
+
+## Xamarin Essentials
 
     type ILocationService =
         abstract member GetLocation : unit -> Location option

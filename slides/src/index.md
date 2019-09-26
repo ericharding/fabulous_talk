@@ -465,11 +465,6 @@ WPF / 16ms
     ...
     Cmd.ofSub locationSub
 
-<!--
-## Navigation
-* Do you want the back button to work?
--->
-
 ***
 
 # Questions?

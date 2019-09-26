@@ -1,7 +1,7 @@
 - title : Developing a Fabulous Mobile App
 - description : Getting started with Fabulous
 - author : Eric Harding
-- theme : Night
+- theme : night
 - transition : default
 
 ***
@@ -22,13 +22,7 @@ https://blog.digitalsorcery.net
 
 # Storytime 
 # <i class="fas fa-book"></i> 
-<!-- Introduction to fabulous at the meetup
-    "do you like it? is it any good?" "it's fabulous"
--->
-
----
-
-![](images/idontknow.jpg)
+<!-- Introduction to fabulous at the meetup -->
 
 ---
 ![](images/i-know-this.jpg)
@@ -42,19 +36,18 @@ it feels familiar because most pieces stay the same
 
 ## F#
 * No separate UI language
-* No new tools needed
+* No new tools
 
 ---
 
-## Domain Modeling
+## Domain Model
 * Works with your _existing_ model
-* Make illegal states unrepresentable
+<!-- make illegal states unrepresentable -->
 
 ---
 
 ## Immutability
 * Designed for functional languages
-* No required mutability
 <!-- Never have to add a setter -->
 
 ---
@@ -66,10 +59,7 @@ it feels familiar because most pieces stay the same
 
 ***
 
-### Before MVU?
-
-> We are all here for some special reason. Stop being a prisoner of your past. Become the architect of your future. 
-> ― WiseOldSayings.com
+# Before MVU?
 
 ---
 
@@ -78,13 +68,14 @@ it feels familiar because most pieces stay the same
 ![](images/Abe_Simpson.png)
 <!-- The classic UI pattern, 
 MVC Smalltalk 79
+40th birthday this year
 Ask 5 developers what MVC is and you'll get 5 answers
 -->
 
 ---
 
 # MVP
-<!-- basically still MVC... -->
+<!-- when you do a talk on MVCJJK --> 
 
 ---
 
@@ -95,6 +86,7 @@ Ask 5 developers what MVC is and you'll get 5 answers
 <!-- Accidental complexity
 separate designer tooling
 code like constructs (behaviors, converters)
+A lot to learn
 -->
 
 ---
@@ -288,11 +280,9 @@ Diff algorithm behind the scenes
 
 ---
 
-## Performance
+# Performance
 
-* Memoize
-
-# TODO: `dependsOn` sample
+    dependsOn model.Count (fun model count -> ...)
 
 
 ***
@@ -362,8 +352,6 @@ SameRoom
         Async.StartWithContinuations (popForm, 
             success, onFailure, onFailure)
 
-<!-- TODO: look up StartWithContinuations -->
-
 ---
 
     let loginButton = 
@@ -412,10 +400,8 @@ WPF / 16ms
         View.Grid(
             created = flyIn,
             children = [...])
----
 
-### TODO: talk about animations triggered by messages
-- borrow from don dyme's talk
+<!-- animations triggered by messages -->
 
 ---
 

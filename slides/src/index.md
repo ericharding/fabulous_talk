@@ -75,7 +75,7 @@ Ask 5 developers what MVC is and you'll get 5 answers
 ---
 
 # MVP
-<!-- when you do a talk on MVCJJK --> 
+<!-- when you do a talk on MVC --> 
 
 ---
 
@@ -86,7 +86,6 @@ Ask 5 developers what MVC is and you'll get 5 answers
 <!-- Accidental complexity
 separate designer tooling
 code like constructs (behaviors, converters)
-A lot to learn
 -->
 
 ---
@@ -95,7 +94,9 @@ A lot to learn
 > Where's the State?
 > -- Jim Bennett
 
-<!-- MV_ can be a bit vague.  MVU is not vague.  You can tell by the type signatures 
+<!-- MV* talk about logic
+does your __ have state?
+MV_ can be a bit vague.  MVU is not vague.  You can tell by the type signatures 
 -->
 
 ---
@@ -103,7 +104,7 @@ A lot to learn
 ## Tech Support
 ![](images/hello_it.jpg)
 <!--
-Reboot to fix it is so ingrained
+Reboot to fix it is so ingrained...
 I physically cut my fiber. It was sticking out of the ground and I could look at both ends.
 They wouldn't send someone out to fix it until I had rebooted my modem.
 -->
@@ -146,9 +147,9 @@ Debugging advantages
 
 
 <!-- Xamarin forms DSL
-Not the same as fable but that's ok
-Live reload
+virtual DOM
 Same language, easy refactoring
+Live reload
 -->
 
 ---

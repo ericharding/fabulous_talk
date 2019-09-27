@@ -145,7 +145,6 @@ Debugging advantages
 
     Model -> (Msg->unit) -> Lightweight Element Tree
 
-
 <!-- Called every time
 DSL
 Easy refactoring
@@ -173,9 +172,9 @@ Live reload
         | Increment
         | Decrement
 
-    let init () = { count = 0 }, Cmd.none
-
 ---
+
+    let init () = { count = 0 }, Cmd.none
 
     let update msg model =
         match msg with
@@ -224,14 +223,6 @@ Live reload
 
 ---
 
-    let init () = 
-        let cstate, ccmd = Counter.init()
-        let rstate, rcmd = Reverser.init()
-        { counter = cstate; text = rstate }, 
-        Cmd.batch [Cmd.map CounterMsg ccmd; Cmd.map ReverserMsg rcmd]
-
----
-
     let update msg model =
         match msg with
         | CounterMsg m -> 
@@ -270,7 +261,7 @@ In XAML this refactoring is painful, in f# it is not
 
 ---
 
-# Diff & Patch
+# Diff + Patch
 ![](images/vdom.png)
 <!--
 Lightweight
